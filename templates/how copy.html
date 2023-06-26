@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOW IT WORKS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Teko|Oswald|Nunito&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="/static/mystyle.css?version=3.2">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<ul class="topnav">
+  		<li><a href="{{url_for('home')}}">HOME</a></li>
+  		<li><a class="active" href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="{{url_for('about')}}">ABOUT US</a></li>
+  	</ul>
+  	<div class="heading">
+  		<h1>AUTOMATIC ESSAY GRADING SYSTEM</h1>
+  		<h1>HOW IT WORKS</h1> 
+  		  	<p>Machine Learning | 26 June 2019</p>
+  	</div>
+  	<br>
+  	<div class="howitworks">
+	
+	<p>Essays are paramount for of assessing the academic excellence along with linking
+the different ideas with the ability to recall but are notably time consuming when they are
+assessed manually. Manual grading takes significant amount of evaluator’s time and hence it is
+an expensive process. Automated grading if proven effective will not only reduce the time for
+assessment but comparing it with human scores will also make the score realistic. The project
+aims to develop an automated essay assessment system by use of machine learning techniques
+by classifying a corpus of textual entities into small number of discrete categories,
+corresponding to possible grades. Linear regression technique will be utilized for training the
+model along with making the use of various other classifications and clustering techniques. We
+intend to train classifiers on the training set, make it go through the downloaded dataset, and
+then measure performance our dataset by comparing the obtained values with the dataset
+values. We have implemented our model using python.
+	</p>
+</div>
+
+<div class="foot_">
+	<div class="foot_row">
+		<div class="foot_column">
+			<ul>
+				<li><a href="{{url_for('about')}}"> About us</a>
+				</li>
+				<br>
+				<li><a href="{{url_for('how')}}"> How it works</a>
+				</li>
+				<br>
+				<li><a href="https://www.kaggle.com/c/asap-aes/data/"> Dataset used</a></li>
+				<br>
+				<li><a href="https://github.com/saqeeb360/Essay_Grading_System/blob/master/app.py"> Github code</a></li>
+				<br>
+				
+			</ul>
+		</div>
+		<div class="foot_column"></div>
+		<div class="foot_column">
+			<ul style="list-style-type: none;">
+				<li>
+					<a href="mailto:saqeeb.360@gmail.com">
+						<i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail us
+					</a>
+				</li>
+				<br>
+				<li>
+					<i class="fa fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-707-384-4822</i>
+				</li>
+				<br>
+				<li>
+					<a href="https://github.com/Saqeeb360">
+						<i class="fa fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github
+					</a>
+				</li>
+				<br>
+				<li>
+					<a href="https://www.linkedin.com/in/saqeeb360/">
+						<i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="copyright">
+	Copyright © 2019 Automated Essay Grading. All rights Reserved
+
+	
+</div>
+
+
+</body>
+</html>

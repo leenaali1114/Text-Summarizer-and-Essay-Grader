@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Essay Grading System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Teko|Oswald|Nunito&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="/static/css/mystyle.css?version=3.2">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<ul class="topnav">
+  		<li><a href="{{url_for('home')}}">HOME</a></li>
+  		<li><a class="active" href="{{url_for('essay07')}}">ESSAY</a></li>
+  		<li><a href="{{url_for('how')}}">HOW IT WORKS</a></li>
+  		<li><a href="{{url_for('contact_us')}}">CONTACT</a></li>
+  		<li class="right"><a href="{{url_for('about')}}">ABOUT</a></li>
+  	</ul>
+	<div class='heading'>
+		<center >
+			<h1>Patience</h1>
+			<p>
+				Write about patience. Being patient means that you are understanding and tolerant. A patient person experience difficulties without complaining.
+Do only one of the following: write a story about a time when you were patient OR write a story about a time when someone you know was patient OR write a story in your own way about patience.
+
+			</p>
+		</center>
+	</div>
+	<div align="center">
+		<form method=POST action="{{ url_for('result',var='7')}}" class="form-group">
+			<textarea name="essay" rows="20" cols="70" placeholder="Enter the essay." required></textarea><br><br>
+			<button type="submit" class="button" style="vertical-align:middle"><span>
+				Result
+			</span></button>
+
+
+		</form>
+	</div>
+		<div class="foot_">
+	<div class="foot_row">
+		<div class="foot_column">
+			<ul>
+				<li><a href="{{url_for('about')}}"> About us</a>
+				</li>
+				<br>
+				<li><a href="{{url_for('how')}}"> How it works</a>
+				</li>
+				<br>
+				<li><a href="https://www.kaggle.com/c/asap-aes/data/"> Dataset used</a></li>
+				<br>
+				<li><a href="https://github.com/saqeeb360/Essay_Grading_System/blob/master/app.py"> Github code</a></li>
+				<br>
+				
+			</ul>
+		</div>
+		<div class="foot_column"></div>
+		<div class="foot_column">
+			<ul style="list-style-type: none;">
+				<li>
+					<a href="mailto:saqeeb.360@gmail.com">
+						<i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mail us
+					</a>
+				</li>
+				<br>
+				<li>
+					<i class="fa fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91-707-384-4822</i>
+				</li>
+				<br>
+				<li>
+					<a href="https://github.com/Saqeeb360">
+						<i class="fa fa-github"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github
+					</a>
+				</li>
+				<br>
+				<li>
+					<a href="https://www.linkedin.com/in/saqeeb360/">
+						<i class="fa fa-linkedin"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LinkedIn
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="copyright">
+	Copyright © 2019 Automated Essay Grading. All rights Reserved
+
+	
+</div>
+
+
+</body>
+</html>
